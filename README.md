@@ -40,3 +40,21 @@ Run the unit tests:
 ```bash
 ng test
 ```
+
+## Testing Notes
+
+Tested prior to submission.
+
+Test steps performed:
+
+- Opened the app and verified the header, home page, and product page render.
+- Clicked product cards and confirmed the selected card styling updates.
+- Confirmed the selected product description appears on the Products page.
+- Verified product images load correctly.
+
+Commands and tools used:
+
+- `ng serve`
+- `ng lint`
+- `ng test --watch=false`
+- Browser developer tools
