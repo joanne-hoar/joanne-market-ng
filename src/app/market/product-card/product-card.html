@@ -1,4 +1,4 @@
-<div class="product-card" [class.product-card--selected]="isSelected()" (click)="onSelect()">
+<button type="button" class="product-card" [class.product-card--selected]="isSelected()" (click)="onSelect()">
 	<img
 		[ngSrc]="product().imageUrl"
 		[alt]="product().name"
@@ -7,4 +7,4 @@
 	>
 	<h3>{{ product().name }}</h3>
 	<h4>${{ product().price }}</h4>
-</div>
+</button>
