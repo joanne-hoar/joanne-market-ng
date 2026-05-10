@@ -1,4 +1,10 @@
 <div class="product-card" (click)="onSelect()">
-<h3>{{ product().name }}</h3>
-<h4>{{ product().price }}</h4>
+	<img
+		[ngSrc]="product().imageUrl"
+		[alt]="product().name"
+		width="320"
+		height="240"
+	>
+	<h3>{{ product().name }}</h3>
+	<h4>{{ product().price }}</h4>
 </div>
