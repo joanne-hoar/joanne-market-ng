@@ -13,6 +13,14 @@ describe('ProductCard', () => {
 
     fixture = TestBed.createComponent(ProductCard);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('product', {
+      id: 1001,
+      name: 'Cat',
+      price: 100,
+      description: 'A calm companion with a soft coat and a curious personality.',
+      imageUrl: '/products/cat.png',
+    });
+    fixture.detectChanges();
     await fixture.whenStable();
   });
 
