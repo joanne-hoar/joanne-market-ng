@@ -1,0 +1,38 @@
+/* styles created with Chat GPT 5.4 in GitHub CoPilot */
+.site-header {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/Joanne_Banner_Gemini_Generated.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 180px;
+	padding: 1.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.site-title {
+	margin: 0;
+	font-size: clamp(1.8rem, 4vw, 3rem);
+	color: #2913d3;
+	align-self: center;
+	text-align: center;
+}
+
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-self: center;
+	gap: 1rem;
+}
+
+.site-nav a {
+	color: #1f1f1f;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: rgba(255, 255, 255, 0.78);
+	border-radius: 999px;
+}
