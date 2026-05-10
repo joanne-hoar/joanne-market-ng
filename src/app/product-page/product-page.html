@@ -1,1 +1,4 @@
-<p>product-page works!</p>
+<h1>Product Page</h1>
+@for (product of productService.products(); track product.id) {
+    <app-product-card [product]="product"></app-product-card>
+}
