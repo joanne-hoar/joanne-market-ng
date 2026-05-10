@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, EventEmitter, Output, input } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { Product } from '../product';
 
@@ -10,9 +10,11 @@ import { Product } from '../product';
 })
 export class ProductCard {
   product = input.required<Product>();
-  selected = output<number>();
+  isSelected = input(false);
+
+  @Output() readonly selected = new EventEmitter<Product>();
 
   onSelect() {
-    this.selected.emit(this.product().id);
+    this.selected.emit(this.product());
   }
 }

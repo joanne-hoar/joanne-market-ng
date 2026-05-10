@@ -1,4 +1,4 @@
-<div class="product-card" (click)="onSelect()">
+<div class="product-card" [class.product-card--selected]="isSelected()" (click)="onSelect()">
 	<img
 		[ngSrc]="product().imageUrl"
 		[alt]="product().name"
@@ -6,5 +6,5 @@
 		height="240"
 	>
 	<h3>{{ product().name }}</h3>
-	<h4>{{ product().price }}</h4>
+	<h4>${{ product().price }}</h4>
 </div>

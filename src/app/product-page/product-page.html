@@ -1,4 +1,17 @@
 <h1>Product Page</h1>
-@for (product of productService.products(); track product.id) {
-    <app-product-card [product]="product"></app-product-card>
+<div class="product-grid">
+    @for (product of productService.products(); track product.id) {
+        <app-product-card
+            [product]="product"
+            [isSelected]="selectedProduct()?.id === product.id"
+            (selected)="onSelectProduct($event)"
+        ></app-product-card>
+    }
+</div>
+
+@if (selectedProduct(); as product) {
+    <section class="selected-product">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+    </section>
 }
